@@ -79,3 +79,10 @@ variable "public_subnet_az2_cidr" {
     description  = "ssl certificate arn"
     type         = string
   }
+
+  # sns topic variable
+  variable "operator_email" {
+    default      = "fitzgeraldh2k@gmail.com"
+    description  = "a valid email address"
+    type         = string
+  }
