@@ -72,3 +72,10 @@ variable "public_subnet_az2_cidr" {
     description  = "create a stanby db instance"
     type         = string
   }
+
+  # application load balancer variables
+     variable "ssl_certificate_arn" {
+    default      = "arn:aws:acm:us-east-1:179277036688:certificate/cb196a50-3ca0-42d6-bdf2-d1e1ee31fdec"
+    description  = "ssl certificate arn"
+    type         = string
+  }
